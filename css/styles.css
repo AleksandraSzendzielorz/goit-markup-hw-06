@@ -105,7 +105,6 @@ body {
 .order-button {
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -675,4 +674,63 @@ img {
   height: 4px;
   background-color: var(--OCEAN);
   border-radius: 2px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-text {
+  color: var(--WHITE);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  margin-left: 80px;
+}
+.subscribe-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--IRIS);
+  border: none;
+  color: var(--WHITE);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 24px;
+}
+.subscribe-button:focus,
+.subscribe-button:hover {
+  background-color: var(--OCEAN);
+}
+.input-email {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--NAVY-BLUE);
+  padding-left: 16px;
+  color: var(--WHITE);
+}
+.subscribe-text .input-email::placeholder {
+  color: var(--WHITE);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
 }
