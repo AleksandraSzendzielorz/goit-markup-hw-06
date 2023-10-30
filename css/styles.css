@@ -672,6 +672,16 @@ img {
   border: 1px solid var(--NAVY-BLUE-modal);
   padding-left: 38px;
 }
+.input-form:focus,
+.input-form:hover {
+  outline: none;
+  border: 1px solid var(--IRIS);
+}
+.input-form:hover + .modal-form-svg,
+.input-form:focus + .modal-form-svg {
+  fill: var(--IRIS);
+}
+
 .textarea-comment {
   width: 360px;
   height: 120px;
@@ -687,7 +697,9 @@ img {
   height: 16px;
   flex-shrink: 0;
   stroke-width: 1px;
-  stroke: var(--NAVY-BLUE-modal);
+  background-color: var(--OCEAN);
+  stroke-width: 1px;
+  stroke: var(--OCEAN);
 }
 .portfolio-image-wrapper {
   position: relative;
@@ -695,14 +707,19 @@ img {
 }
 .form-imput-div {
   position: relative;
+  fill: var(--NAVY-BLUE);
 }
+.form-imput-div:hover,
+.form-imput-div:focus {
+  fill: var(--IRIS);
+}
+
 .modal-form-svg {
   position: absolute;
   width: 18px;
   height: 24px;
   left: 16px;
   top: 8px;
-  fill: var(--NAVY-BLUE);
 }
 .policy {
   font-family: Roboto;
@@ -712,6 +729,10 @@ img {
   line-height: 1.16;
   letter-spacing: 0.48px;
   color: var(--LIGHT-SLATE);
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 16px;
 }
 .policy-link {
   color: var(--IRIS);
