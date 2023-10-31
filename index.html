@@ -422,15 +422,14 @@
         <div>
           <form class="subscribe-form">
             <label class="subscribe-text" for="subscribe-email"
-              >Subscribe</label
-            >
-            <input
-              class="input-email"
-              type="email"
-              name="e-mail"
-              id="subscribe-email"
-              placeholder="E-mail"
-            />
+              >Subscribe
+              <input
+                class="input-email"
+                type="email"
+                name="e-mail"
+                id="subscribe-email"
+                placeholder="E-mail"
+            /></label>
             <div class="subscribe-button-div">
               <p class="hidden-subscribe">Subscribe button</p>
               <button class="subscribe-button" type="submit">
@@ -457,7 +456,7 @@
           </p>
           <form class="modal-form">
             <label class="modal-label" for="user-name">Name </label>
-            <div class="form-imput-div">
+            <div class="form-input-div">
               <input
                 class="input-form"
                 type="text"
@@ -470,7 +469,7 @@
             </div>
 
             <label class="modal-label" for="user-phone"> Phone</label>
-            <div class="form-imput-div">
+            <div class="form-input-div">
               <input
                 class="input-form"
                 type="tel"
@@ -483,7 +482,7 @@
             </div>
 
             <label class="modal-label" for="user-email"> Email</label>
-            <div class="form-imput-div">
+            <div class="form-input-div">
               <input
                 class="input-form"
                 type="email"
@@ -506,9 +505,6 @@
             </div>
 
             <div class="policy">
-              <label for="user-privacy"
-                >I accept the terms and conditions of the</label
-              >
               <input
                 class="checkbox"
                 type="checkbox"
@@ -516,7 +512,9 @@
                 id="user-privacy"
                 value="accept"
               />
-              <a class="policy-link" href="">Privacy Policy</a>
+              <label for="user-privacy"
+                >I accept the terms and conditions of the</label
+              ><a class="policy-link" href="">Privacy Policy</a>
             </div>
             <button class="send-modal-button" type="submit">Send</button>
           </form>
